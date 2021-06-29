@@ -4,3 +4,12 @@ SELECT U.*,
 (SELECT TOP 1 ADDRESS.ADDRESSTEXT FROM ADDRESS WHERE USERID=U.ID ORDER BY ID) AS ILKADRES,
 (SELECT COUNT(ADDRESSTEXT) FROM ADDRESS WHERE USERID=U.ID) AS ADRESSAYISI
 FROM USERS U 
+
+
+
+--ascii ve char fonksiyonları
+select char('49')
+select ascii('1')
+
+select char('65')
+select ascii('A')
